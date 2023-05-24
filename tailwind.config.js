@@ -18,6 +18,16 @@ module.exports = {
       1: "1.5px",
       2: "2px",
     },
+    fontSize: {
+      sm: ["14px", "20px"],
+      base: ["16px", "24px"],
+      lg: ["20px", "28px"],
+      xl: ["255px", "32px"],
+    },
+    height: {
+      md: "20vh",
+      lg: "40vh",
+    },
     padding: {
       "32px": "32px",
       "13px": "13px",
