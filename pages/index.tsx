@@ -14,7 +14,7 @@ const elementsInCart = 0;
 const Header: React.FC = () => {
   return (
     <header>
-      <div className="max-w-full flex items-center justify-between p-32px mb-10">
+      <div className="max-w-full flex items-center justify-between p-32px mb-2">
         <Link href={"/"}>
           <a>
             <Image alt="logo" height="28.15px" src={logo} width="192px" />
@@ -42,11 +42,11 @@ const Header: React.FC = () => {
         </button>
       </div>
       <div className="flex items-center flex-col justify-between text-center h-80 pt-3">
-        <div className="flex items-center bg-red-600 h-md">
+        <div className="flex items-center h-md">
           <h1 className="text-xl font-bold">BASEMENT</h1>
         </div>
-        <div className="flex items-center h-40">
-          <div>
+        <div className="flex items-center h-md">
+          <div className="border-white border-1 rounded-large">
             <span>EST</span>
           </div>
           <h1 className="supply">SUPPLY</h1>
@@ -59,10 +59,32 @@ const Header: React.FC = () => {
   );
 };
 
+const MotionBar: React.FC = () => {
+  return (
+    <div className="max-w-full overflow-hidden border-t-2 border-b-2 box-border">
+      <div className="overflow-left-right box-content">
+        <p className="text-lg m-7">
+          A man can’t have enough base­ment swag  —  A man can’t have enough base­ment swag  — A man
+          can’t have enough base­ment swag  — A man can’t have enough base­ment swag
+        </p>
+      </div>
+    </div>
+  );
+};
+
+// const MotionBar: React.FC = () => {
+//   return (
+//     <div className="overflow-left-right">
+//       A man can’t have enough base­ment swag  —  A man can’t have enough base­ment swag
+//     </div>
+//   );
+// };
+
 const Home: NextPage = () => {
   return (
     <div>
       <Header />
+      <MotionBar />
     </div>
   );
 };

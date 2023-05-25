@@ -21,11 +21,11 @@ module.exports = {
     fontSize: {
       sm: ["14px", "20px"],
       base: ["16px", "24px"],
-      lg: ["20px", "28px"],
+      lg: ["50px", "28px"],
       xl: ["255px", "32px"],
     },
     height: {
-      md: "20vh",
+      md: "25vh",
       lg: "40vh",
     },
     padding: {
