@@ -1,6 +1,6 @@
 import type {NextPage} from "next";
 
-import {Header, AnimatedTextBar, BasementSupply} from "./components";
+import {Header, AnimatedTextBar, BasementSupply} from "../components";
 
 const elementsInCart = 1;
 

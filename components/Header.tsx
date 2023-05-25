@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import {useMediaQuery} from "react-responsive";
 
-import logo from "../../public/logo.svg";
-import iconHeaderCenter from "../../public/iconHeaderCenter.svg";
-import iconHeaderCenter1 from "../../public/iconHeaderCenter1.svg";
-import iconHeaderCenter2 from "../../public/iconHeaderCenter2.svg";
-import iconHeaderCenter3 from "../../public/iconHeaderCenter3.svg";
-import iconHeaderCenter4 from "../../public/iconHeaderCenter4.svg";
+import logo from "../public/logo.svg";
+// import iconHeaderCenter2 from "../public/iconHeaderCenter2.svg";
+// import iconHeaderCenter1 from "../public/iconHeaderCenter1.svg";
+// import iconHeaderCenter3 from "../public/iconHeaderCenter3.svg";
+// import iconHeaderCenter4 from "../public/iconHeaderCenter4.svg";
+
+// import iconHeaderCenter from " ../public/iconHeaderCenter.svg";
 
 interface HeaderProps {
   elementsInCart: number;
@@ -35,7 +36,7 @@ const DesktopHeader: React.FC<HeaderProps> = ({elementsInCart}) => {
         </a>
       </Link>
       <div>
-        <a className="m-3">
+        {/* <a className="m-3">
           <Image alt="iconHeaderCenter" src={iconHeaderCenter} />
         </a>
         <a className="m-3">
@@ -49,7 +50,7 @@ const DesktopHeader: React.FC<HeaderProps> = ({elementsInCart}) => {
         </a>
         <a className="m-3">
           <Image alt="iconHeaderCenter" src={iconHeaderCenter4} />
-        </a>
+        </a> */}
       </div>
       <button className="inline-flex items-center rounded-large border-white border-1">
         <p className="pt-13px pb-13px pl-32px pr-32px font-black leading-5 text- tracking-tight">
